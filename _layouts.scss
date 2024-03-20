@@ -1,0 +1,35 @@
+@use "./variables" as *;
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: $primary-colour;
+    color: $secondary-colour;
+
+    .nav-header {
+        font-size: 40px;
+        padding: 10px 10px;
+    }
+
+    .nav-list {
+        display: flex;
+        justify-content: space-between;
+        list-style: none;
+        padding: 5px 5px;
+        text-align: center;
+
+        .list-items {
+            padding: 5px 5px;
+        }
+
+        .button {
+            background-color: $primary-colour;
+            color: $secondary-colour;
+            text-decoration: none;
+            border-radius: 10px;
+            padding: 5px 5px;
+            height: fit-content;
+        }
+    }
+
+}

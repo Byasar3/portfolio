@@ -1,3 +1,33 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  color: #6E3B3B;
+}
+.nav .nav-header {
+  font-size: 40px;
+  padding: 10px 10px;
+}
+.nav .nav-list {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  padding: 5px 5px;
+  text-align: center;
+}
+.nav .nav-list .list-items {
+  padding: 5px 5px;
+}
+.nav .nav-list .button {
+  background-color: white;
+  color: #6E3B3B;
+  text-decoration: none;
+  border-radius: 10px;
+  padding: 5px 5px;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
 * {
   margin: 0;
   padding: 0;
