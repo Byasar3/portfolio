@@ -36,11 +36,16 @@
   justify-content: space-between;
   background-color: #6E3B3B;
   color: #6E3B3B;
-  padding-top: 30px;
+  padding: 20px 20px;
+  align-items: center;
 }
 .footer .social-media {
   text-decoration: none;
   list-style: none;
+  display: flex;
+}
+.footer .social-media .social-media-icons {
+  padding: 5px;
 }
 
 .body {
@@ -118,6 +123,7 @@
 }
 .projects .individual-card {
   border-style: das;
+  padding-top: 30px;
 }
 .projects .individual-card img {
   width: 100%;
