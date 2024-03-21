@@ -4,6 +4,8 @@
   background-color: white;
   color: #6E3B3B;
   padding-bottom: 30px;
+  margin: 10px;
+  align-items: center;
 }
 .nav .nav-header {
   font-size: 40px;
@@ -46,14 +48,12 @@
   flex-direction: column;
   background-color: white;
   color: #6E3B3B;
-  margin: auto;
 }
 
 .main {
   display: flex;
   flex-direction: column;
-  padding: 20px 0px;
-  margin: 20px;
+  margin: 40px;
 }
 
 .header {
@@ -74,6 +74,10 @@
   margin: auto;
   padding: 30px 0px;
 }
+.about .about-me {
+  font-size: 50px;
+  text-align: center;
+}
 .about .my-img {
   padding: 5px;
   border-radius: 50px;
@@ -83,17 +87,16 @@
   margin-right: auto;
   width: 50%;
 }
-.about .about-me {
-  font-size: 30px;
-  text-align: center;
-}
 
 .skills {
   display: flex;
   flex-direction: column;
   text-align: center;
   margin: auto;
-  padding: 30px 0px;
+  padding-top: 30px;
+}
+.skills h1 {
+  font-size: 50px;
 }
 .skills .skill-deck {
   display: flex;
@@ -107,11 +110,14 @@
 .projects {
   display: flex;
   flex-direction: column;
-  padding: 30px 0px;
+  padding-top: 30px;
 }
 .projects .my-projects {
-  font-size: 30px;
+  font-size: 50px;
   text-align: center;
+}
+.projects .individual-card {
+  border-style: das;
 }
 .projects .individual-card img {
   width: 100%;
