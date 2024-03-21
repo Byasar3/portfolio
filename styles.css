@@ -29,18 +29,31 @@
   height: fit-content;
 }
 
+.footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: #6E3B3B;
+  color: #6E3B3B;
+  padding-top: 30px;
+}
+.footer .social-media {
+  text-decoration: none;
+  list-style: none;
+}
+
 .body {
   display: flex;
   flex-direction: column;
   background-color: white;
   color: #6E3B3B;
-  padding: 20px 20px;
+  margin: auto;
 }
 
 .main {
   display: flex;
   flex-direction: column;
-  margin: auto;
+  padding: 20px 0px;
+  margin: 20px;
 }
 
 .header {
@@ -83,10 +96,9 @@
   padding: 30px 0px;
 }
 .skills .skill-deck {
-  display: grid;
-  gap: 5px;
-  grid-template-columns: repeat(3, 1fr);
-  grid-auto-rows: auto;
+  display: flex;
+  flex-direction: column-reverse;
+  flex-wrap: wrap;
 }
 .skills .skill-deck .skill-img {
   height: 100x;
@@ -96,15 +108,15 @@
 .projects {
   display: flex;
   flex-direction: column;
-  margin: auto;
   padding: 30px 0px;
+  margin: auto;
 }
 .projects .my-projects {
   font-size: 30px;
   text-align: center;
 }
 .projects .individual-card {
-  padding: 25px;
+  margin: auto;
 }
 .projects .individual-card .tech-stack {
   font-size: 16px;

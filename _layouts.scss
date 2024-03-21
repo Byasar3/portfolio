@@ -32,5 +32,17 @@
             height: fit-content;
         }
     }
+}
 
+.footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: $secondary-colour;
+    color: $secondary-colour;
+    padding-top: 30px;
+
+    .social-media {
+        text-decoration: none;
+        list-style: none;
+    }
 }
