@@ -32,6 +32,7 @@
     flex-direction: column;
     margin: auto;
     padding: 30px 0px;
+    margin: auto;
 
     .about-me {
         font-size: 30px;
@@ -43,11 +44,14 @@
     display: flex;
     flex-direction: column;
     text-align: center;
+    margin: auto;
+    padding: 30px 0px;
 
     .skill-deck  {
         display: grid;
         gap: 5px;
         grid-template-columns: repeat(3, 1fr);
+        grid-auto-rows: auto;
 
         .skill-img {
             height: 100x;
@@ -55,6 +59,49 @@
         }
     }
 
+}
+
+.projects {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    padding: 30px 0px;
+
+    .my-projects {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .individual-card {
+        padding: 25px;
+
+        .tech-stack {
+            font-size: 16px;
+            padding-bottom: 2px;
+            padding-top: 25px;
+        }
+
+        .project-name {
+            font-size: 24px;
+            padding-bottom: 2px;
+        }
+
+        .project-description {
+            padding-bottom: 20px;
+            margin: auto;
+        }
+
+        .project-btn {
+            background-color: $primary-colour;
+            color: $quaternary-colour;
+            text-decoration: none;
+            border-radius: 10px;
+            padding: 10px 15px;
+            height: fit-content;
+            margin-right: 10px;
+        }
+
+    }
 }
 
 
