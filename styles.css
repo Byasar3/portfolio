@@ -6,7 +6,7 @@
 }
 .nav .nav-header {
   font-size: 40px;
-  padding: 10px 10px;
+  padding: 0px 0px;
 }
 .nav .nav-list {
   display: flex;
@@ -28,6 +28,48 @@
   height: fit-content;
 }
 
+.body {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  color: #6E3B3B;
+  padding: 20px 20px;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  padding: 30px 0px;
+}
+.header .welcome-msg {
+  font-size: 20px;
+}
+.header .short-description {
+  font-size: 40px;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+.about .about-me {
+  font-size: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .body {
+    display: flex;
+  }
+  .main {
+    display: flex;
+  }
+}
 * {
   margin: 0;
   padding: 0;
