@@ -49,7 +49,6 @@
         font-size: 30px;
         text-align: center;
     }
-
 }
 
 .skills {
@@ -61,22 +60,19 @@
 
     .skill-deck  {
         display: flex;
-        flex-direction: column-reverse;
         flex-wrap: wrap;
 
         .skill-img {
-            height: 100x;
-            padding: 5px
+            width: (100% / 3);
+            padding: 35px;
         }
     }
-
 }
 
 .projects {
     display: flex;
     flex-direction: column;
     padding: 30px 0px;
-    margin: auto;
 
     .my-projects {
         font-size: 30px;
@@ -84,9 +80,14 @@
     }
 
     .individual-card {
-        margin: auto;
 
-        .tech-stack {
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: fill;
+        }
+
+        .tech-used {
             font-size: 16px;
             padding-bottom: 2px;
             padding-top: 25px;
