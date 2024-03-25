@@ -2,10 +2,11 @@
   display: flex;
   justify-content: space-between;
   background-color: white;
-  color: #6E3B3B;
+  color: black;
   padding-bottom: 30px;
   margin: 10px;
   align-items: center;
+  display: none;
 }
 .nav .nav-header {
   font-size: 40px;
@@ -23,7 +24,7 @@
 }
 .nav .nav-list .button {
   background-color: white;
-  color: #6E3B3B;
+  color: black;
   text-decoration: none;
   border-radius: 10px;
   padding: 5px 5px;
@@ -34,10 +35,13 @@
 .footer {
   display: flex;
   justify-content: space-between;
-  background-color: #6E3B3B;
-  color: #6E3B3B;
+  background-color: black;
+  color: black;
   padding: 20px 20px;
   align-items: center;
+}
+.footer p {
+  color: white;
 }
 .footer .social-media {
   text-decoration: none;
@@ -48,11 +52,16 @@
   padding: 5px;
 }
 
+@media screen and (min-width: 768px) {
+  .nav {
+    display: flex;
+  }
+}
 .body {
   display: flex;
   flex-direction: column;
   background-color: white;
-  color: #6E3B3B;
+  color: black;
 }
 
 .main {
@@ -109,7 +118,7 @@
 }
 .skills .skill-deck .skill-img {
   width: 33.3333333333%;
-  padding: 35px;
+  padding: 5%;
 }
 
 .projects {
@@ -146,7 +155,7 @@
 }
 .projects .individual-card .project-btn {
   background-color: white;
-  color: #6E3B3B;
+  color: #6e3b3b;
   text-decoration: none;
   border-radius: 10px;
   padding: 10px 15px;
@@ -161,10 +170,23 @@
   }
   .main {
     display: flex;
+    margin: 10%;
   }
-  .skills, .skill-deck {
+  .skills {
     display: flex;
-    text-align: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    margin: 0;
+  }
+  .skills .skill-deck {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+  }
+  .skills .skill-img {
+    margin: auto;
+    padding: 5%;
   }
 }
 * {

@@ -1,56 +1,67 @@
 @use "./variables" as *;
 
 .nav {
+  display: flex;
+  justify-content: space-between;
+  background-color: $primary-colour;
+  color: $secondary-colour;
+  padding-bottom: 30px;
+  margin: 10px;
+  align-items: center;
+  display: none;
+
+  .nav-header {
+    font-size: 40px;
+    padding: 0px 0px;
+  }
+
+  .nav-list {
     display: flex;
     justify-content: space-between;
-    background-color: $primary-colour;
-    color: $secondary-colour;
-    padding-bottom: 30px;
-    margin: 10px;
-    align-items: center;
+    list-style: none;
+    padding: 5px 5px;
+    text-align: center;
 
-    .nav-header {
-        font-size: 40px;
-        padding: 0px 0px;
+    .list-items {
+      padding: 5px 5px;
     }
 
-    .nav-list {
-        display: flex;
-        justify-content: space-between;
-        list-style: none;
-        padding: 5px 5px;
-        text-align: center;
-
-        .list-items {
-            padding: 5px 5px;
-        }
-
-        .button {
-            background-color: $primary-colour;
-            color: $secondary-colour;
-            text-decoration: none;
-            border-radius: 10px;
-            padding: 5px 5px;
-            height: fit-content;
-        }
+    .button {
+      background-color: $primary-colour;
+      color: $secondary-colour;
+      text-decoration: none;
+      border-radius: 10px;
+      padding: 5px 5px;
+      height: fit-content;
     }
+  }
 }
 
 .footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: $secondary-colour;
+  color: $secondary-colour;
+  padding: 20px 20px;
+  align-items: center;
+
+  p {
+    color: $primary-colour;
+  }
+
+  .social-media {
+    text-decoration: none;
+    list-style: none;
     display: flex;
-    justify-content: space-between;
-    background-color: $secondary-colour;
-    color: $secondary-colour;
-    padding: 20px 20px;
-    align-items: center;
 
-    .social-media {
-        text-decoration: none;
-        list-style: none;
-        display: flex;
-
-        .social-media-icons {
-            padding: 5px;
-        }
+    .social-media-icons {
+      padding: 5px;
     }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .nav {
+    display: flex;
+  }
 }
