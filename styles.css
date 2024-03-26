@@ -184,16 +184,14 @@
     align-items: center;
   }
   .header .header__welcome-msg {
-    font-size: 40px;
+    font-size: 30px;
   }
   .header .header__short-description {
-    font-size: 60px;
+    font-size: 50px;
   }
   .header .header__intro-image {
     display: block;
-    height: 500px;
-    width: auto;
-    padding: 10px;
+    overflow: auto;
   }
   .about {
     display: flex;
