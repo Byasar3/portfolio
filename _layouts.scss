@@ -9,12 +9,12 @@
   margin: 10px;
   display: none;
 
-  .nav-header {
+  .nav__header {
     font-size: 40px;
     padding: 0px 0px;
   }
 
-  .nav-list {
+  .nav__list {
     display: flex;
     justify-content: space-between;
     list-style: none;
@@ -22,11 +22,11 @@
     padding: 50px;
     align-items: center;
 
-    .list-items {
+    .nav__list-items {
       padding: 15px;
     }
 
-    .button {
+    .nav__button {
       background-color: $primary-colour;
       color: $secondary-colour;
       text-decoration: none;
@@ -45,16 +45,16 @@
   padding: 20px 20px;
   align-items: center;
 
-  p {
+  .footer__email {
     color: $primary-colour;
   }
 
-  .social-media {
+  .footer__social-media {
     text-decoration: none;
     list-style: none;
     display: flex;
 
-    .social-media-icons {
+    .footer__social-media-icons {
       padding: 5px;
     }
   }
@@ -64,7 +64,7 @@
   .nav {
     display: flex;
 
-    .nav-list {
+    .nav__list {
       padding: 5px;
     }
   }

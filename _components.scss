@@ -18,15 +18,15 @@
   flex-direction: column;
   padding: 30px 0px;
 
-  .welcome-msg {
+  .header__welcome-msg {
     font-size: 20px;
   }
 
-  .short-description {
+  .header__short-description {
     font-size: 40px;
   }
 
-  .intro-image {
+  .header__intro-image {
     display: none;
   }
 }
@@ -42,7 +42,7 @@
   margin: auto;
   padding: 30px 0px;
 
-  .my-img {
+  .about__my-img {
     padding: 5px;
     border-radius: 50px;
     align-items: center;
@@ -60,15 +60,15 @@
   margin: auto;
   padding-top: 30px;
 
-  h1 {
+  .skills__header {
     font-size: 50px;
   }
 
-  .skill-deck {
+  .skills__skill-deck {
     display: flex;
     flex-wrap: wrap;
 
-    .skill-img {
+    .skills__skill-img {
       width: (100% / 3);
       padding: 10%;
     }
@@ -80,12 +80,12 @@
   flex-direction: column;
   padding-top: 30px;
 
-  .my-projects {
+  .projects__my-projects {
     font-size: 50px;
     text-align: center;
   }
 
-  .individual-card {
+  .projects__individual-card {
     border-style: das;
     padding-top: 30px;
 
@@ -137,53 +137,18 @@
     flex-direction: row;
     align-items: center;
 
-    .welcome-msg {
+    .header__welcome-msg {
       font-size: 40px;
     }
 
-    .short-description {
+    .header__short-description {
       font-size: 60px;
     }
 
-    .intro-image {
+    .header__intro-image {
       display: block;
       height: 500px;
       width: auto;
-      padding: 10px;
-    }
-  }
-
-  .skills {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    margin: 0;
-
-    .skill-deck {
-      display: flex;
-      flex-direction: row;
-      flex-wrap: nowrap;
-      overflow-x: scroll;
-    }
-
-    .skill-img {
-      margin: auto;
-      padding: 5%;
-    }
-  }
-
-  .projects {
-    display: flex;
-
-    .project-cards {
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-    }
-
-    .individual-card {
-      width: (100% / 3);
-      height: fit-content;
       padding: 10px;
     }
   }
@@ -193,8 +158,42 @@
     flex-direction: row;
     justify-content: center;
 
-    .description {
+    .about__description {
       padding: 10%;
+    }
+  }
+  .skills {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    margin: 0;
+
+    .skills__skill-deck {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      overflow-x: scroll;
+    }
+
+    .skills__skill-img {
+      margin: auto;
+      padding: 5%;
+    }
+  }
+
+  .projects {
+    display: flex;
+
+    .projects__project-cards {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+
+    .projects__individual-card {
+      width: (100% / 3);
+      height: fit-content;
+      padding: 10px;
     }
   }
 }
