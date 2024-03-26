@@ -147,4 +147,20 @@
       padding: 5%;
     }
   }
+
+  .projects {
+    display: flex;
+
+    .project-cards {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+
+    .individual-card {
+      width: (100% / 3);
+      height: fit-content;
+      padding: 10px;
+    }
+  }
 }

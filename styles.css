@@ -188,6 +188,20 @@
     margin: auto;
     padding: 5%;
   }
+  .projects {
+    display: flex;
+  }
+  .projects .project-cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .projects .individual-card {
+    width: 33.3333333333%;
+    height: -moz-fit-content;
+    height: fit-content;
+    padding: 10px;
+  }
 }
 * {
   margin: 0;
