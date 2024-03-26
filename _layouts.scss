@@ -7,7 +7,6 @@
   color: $secondary-colour;
   padding-bottom: 30px;
   margin: 10px;
-  align-items: center;
   display: none;
 
   .nav-header {
@@ -19,11 +18,12 @@
     display: flex;
     justify-content: space-between;
     list-style: none;
-    padding: 5px 5px;
     text-align: center;
+    padding: 50px;
+    align-items: center;
 
     .list-items {
-      padding: 5px 5px;
+      padding: 15px;
     }
 
     .button {
@@ -31,7 +31,7 @@
       color: $secondary-colour;
       text-decoration: none;
       border-radius: 10px;
-      padding: 5px 5px;
+      padding: 10px 10px;
       height: fit-content;
     }
   }
@@ -63,5 +63,9 @@
 @media screen and (min-width: 768px) {
   .nav {
     display: flex;
+
+    .nav-list {
+      padding: 5px;
+    }
   }
 }
