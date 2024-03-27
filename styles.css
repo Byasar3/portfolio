@@ -22,6 +22,11 @@
 .nav .nav__list .nav__list-items {
   padding: 15px;
 }
+.nav .nav__list .nav__list-items a:link,
+.nav .nav__list .nav__list-items a:visited {
+  text-decoration: none;
+  color: black;
+}
 .nav .nav__list .nav__button {
   background-color: white;
   color: black;

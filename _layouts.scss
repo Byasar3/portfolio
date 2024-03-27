@@ -24,6 +24,12 @@
 
     .nav__list-items {
       padding: 15px;
+
+      a:link,
+      a:visited {
+        text-decoration: none;
+        color: $secondary-colour;
+      }
     }
 
     .nav__button {
